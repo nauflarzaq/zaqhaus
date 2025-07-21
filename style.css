@@ -9,32 +9,32 @@
             --color-light-grey: #F0F0F0;
         }
 /* Reset dan box-sizing */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    /* Video background settings */
-    #bgVideo {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-      pointer-events: none;
-      background: #000; /* fallback */
-    }
-    /* Optional: Overlay agar teks lebih terbaca */
-    #bgOverlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.4); /* gelapkan sesuai kebutuhan */
-      z-index: 0;
-      pointer-events: none;
-    }
+*, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+}
+/* Video background settings */
+#bgVideo {           
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            pointer-events: none;
+            background: #000; /* fallback */
+}
+/* Optional: Overlay agar teks lebih terbaca */
+#bgOverlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.4); /* gelapkan sesuai kebutuhan */
+            z-index: 0;
+            pointer-events: none;
+}
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--color-matte-black);
