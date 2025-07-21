@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased">
-
+    <div id="videoOverlay"></div>
+    <video autoplay loop muted playsinline id="bgVideo">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    
     <!-- Message Modal Structure -->
     <div id="messageModal" class="modal-overlay hidden">
         <div class="modal-content">
@@ -85,6 +89,7 @@
 
     <!-- Featured Collections - The Pit Lane -->
     <section id="collections" class="py-16 px-4 bg-matte-black text-white">
+       
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12 text-racing-red font-oswald">Featured Race Series</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -124,6 +129,7 @@
 
     <!-- Craftsmanship Section - The Engine Bay -->
     <section id="craftsmanship" class="py-16 px-4 bg-carbon-grey text-white">
+        
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-12 text-electric-blue font-oswald">Precision Crafted. Collector Approved.</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -157,6 +163,7 @@
 
     <!-- Testimonials - Victory Lane -->
     <section id="testimonials" class="py-16 px-4 bg-matte-black text-white">
+       
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-12 text-vibrant-yellow font-oswald">What Our Fans Say</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
