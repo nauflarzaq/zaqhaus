@@ -8,6 +8,27 @@
             --color-white: #FFFFFF;
             --color-light-grey: #F0F0F0;
         }
+bgVideo {
+              position: fixed;
+              top: 0; left: 0;
+              min-width: 100vw;
+              min-height: 100vh;
+              width: auto;
+              height: auto;
+              z-index: -1;
+              object-fit: cover;
+              pointer-events: none; /* Supaya elemen di atasnya tetap bisa diklik */
+              background: #000;     /* Fallback jika video belum load */
+            }
+videoOverlay {
+              position: fixed;
+              top: 0; left: 0;
+              width: 100vw;
+              height: 100vh;
+              background: rgba(0,0,0,0.4); /* Transparansi sesuai kebutuhan */
+              z-index: 0;
+              pointer-events: none;
+            }
 
         body {
             font-family: 'Inter', sans-serif;
