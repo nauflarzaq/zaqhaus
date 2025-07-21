@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased">
-    <div id="videoOverlay"></div>
-    <video autoplay loop muted playsinline id="bgVideo">
+    <!-- Video background -->
+    <video id="bgVideo" autoplay loop muted playsinline>
         <source src="video.mp4" type="video/mp4">
+    <!-- Tambahkan format lain jika perlu (webm/ogg) -->
+    Your browser does not support the video tag.
     </video>
+    <!-- Overlay (opsional, bisa dihapus jika tidak perlu) -->
+    <div id="bgOverlay"></div>
     
     <!-- Message Modal Structure -->
     <div id="messageModal" class="modal-overlay hidden">
